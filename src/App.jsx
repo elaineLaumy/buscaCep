@@ -42,21 +42,16 @@ function App() {
         </button>
       </div>
       {Object.keys(cep).length > 0 && (
-      <main className="main">
-        <h2>{cep.cep}</h2>
-        <span>{cep.logradouro}</span>
-
-        {cep.complemento && <span>{cep.complemento}</span>}
-
-        <span>{cep.bairro}</span>
-
-        <span>{localidade}</span>
-      </main>
-
-)}
+        <main className="main">
+          <h2>{cep.cep}</h2>
+          <span>{cep.logradouro}</span>
+          {cep.complemento && <span>{cep.complemento}</span>}
+          <span>{cep.bairro}</span>
+          <span>{localidade}</span>
+        </main>
+      )}
     </div>
   );
 }
-
 
 export default App;
